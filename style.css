@@ -1,9 +1,14 @@
 * {
    margin: 0px;
    padding: 0px;
-   box-sizing: border-box;
    color: white;
    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+   width: 100%;
+   min-height: 100vh;
+   box-sizing: border-box;
 }
 
 .navbar {
@@ -16,6 +21,7 @@
    padding-right: 2rem;
    padding-top: 1rem;
    position: fixed;
+   background-color: black;
 }
 
 .navbar section {
@@ -107,4 +113,33 @@
 .logo-svg:hover {
    cursor: pointer;
    transform: scale(1.1);
+}
+
+.main-section {
+   padding-top: 6rem;
+   padding-left: 2rem;
+   padding-right: 1rem;
+}
+
+.trending-songs-container {
+   padding: 1rem;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.trending-songs-container img {
+   width: 150px;
+   height: 150px;
+   object-fit: cover;
+}
+
+/* style="font-weight: bold; margin-top:0.7rem" */
+.song-name {
+   font-weight: 600;
+   margin-top: 0.6rem;
+}
+
+.singer-name {
+   font-size: 11px;
 }
