@@ -19,9 +19,11 @@
    height: 3rem;
    padding-left: 4rem;
    padding-right: 2rem;
-   padding-top: 1rem;
+   padding-top: 0.8rem;
+   padding-bottom: 0.8rem;
    position: fixed;
    background-color: black;
+   z-index: 30;
 }
 
 .navbar section {
@@ -118,23 +120,38 @@
 .main-section {
    padding-top: 6rem;
    padding-left: 2rem;
-   padding-right: 1rem;
+   padding-right: 7rem;
+   display: flex;
+   flex-direction: column;
+   gap: 3rem;
+   margin-bottom: 2rem;
 }
 
-.trending-songs-container {
-   padding: 1rem;
+.trending-container {
+   margin-top: 0.5rem;
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
 }
 
-.trending-songs-container img {
-   width: 150px;
-   height: 150px;
-   object-fit: cover;
+.trending-container div {
+   padding: 0.5rem;
+   border-radius: 0.4rem;
 }
 
-/* style="font-weight: bold; margin-top:0.7rem" */
+.trending-container div:hover {
+   cursor: pointer;
+   background-color: rgb(33, 33, 33);
+}
+
+.trending-container img {
+   width: 130px;
+   height: 130px;
+   object-fit: cover;
+   cursor: pointer;
+   border-radius: 0.3rem;
+}
+
 .song-name {
    font-weight: 600;
    margin-top: 0.6rem;
@@ -142,4 +159,50 @@
 
 .singer-name {
    font-size: 11px;
+   opacity: 70%;
+}
+
+.main-section-song-header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.main-section-song-header p {
+   cursor: pointer;
+   font-size: 12px;
+   font-weight: 800;
+   opacity: 60%;
+}
+
+.artists img {
+   border-radius: 50rem;
+}
+
+.jumps-back-in-div {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   gap: 2rem;
+}
+
+.jumps-back-in-div img {
+   border-radius: 50rem;
+}
+
+footer {
+   width: 100%;
+   height: 10rem;
+   display: flex;
+   border-top: 0.1px solid rgb(96, 96, 96);
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+footer p {
+   font-size: 11px;
+   letter-spacing: 1px;
+   opacity: 70%;
+   margin: 0.2rem;
 }
