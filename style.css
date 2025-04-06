@@ -203,6 +203,19 @@ footer {
 footer p {
    font-size: 11px;
    letter-spacing: 1px;
-   opacity: 70%;
    margin: 0.2rem;
+   color: rgb(57, 201, 5);
+}
+
+footer a {
+   font-size: 11px;
+   margin-top: 1rem;
+   text-decoration: none;
+}
+
+footer span {
+   font-size: 0.6rem;
+   text-align: left;
+   align-self: last baseline;
+
 }
